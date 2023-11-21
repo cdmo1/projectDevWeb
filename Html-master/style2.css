@@ -1,0 +1,68 @@
+/* Estilos gerais para o corpo do documento */
+body {
+    background-color: antiquewhite; /* Cor de fundo branco antigo */
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Estilo de fonte */
+}
+
+/* Estilos para a seção principal */
+main {
+    width: 70%; /* Largura da seção principal */
+    margin: 20px auto; /* Margem superior e inferior de 20px, centralizado horizontalmente */
+    padding: 20px; /* Preenchimento interno de 20px */
+    background-color: #fff; /* Cor de fundo branca */
+    border-radius: 10px; /* Borda arredondada */
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.4); /* Sombra na caixa */
+}
+
+/* Estilos para o cabeçalho h1 */
+h1 {
+    color: #333; /* Cor do texto cinza escuro */
+}
+
+/* Estilos para parágrafos */
+p {
+    color: #666; /* Cor do texto cinza */
+}
+
+/* Estilos para rótulos e campos de entrada */
+label, input {
+    display: inline-block; /* Exibição em bloco em linha */
+    margin: 0px 40px; /* Margem entre os elementos e as margens laterais */
+    margin-bottom: 5px; /* Margem inferior de 5px */
+}
+
+/* Estilos para rótulos */
+label {
+    width: calc(40% - 80px); /* Largura do rótulo calculada */
+    font-weight: bold; /* Texto em negrito */
+}
+
+/* Estilos para campos de entrada */
+input {
+    width: calc(60% - 110px); /* Largura do campo de entrada calculada */
+    padding: 10px; /* Preenchimento interno de 10px */
+    border: 1px solid #ccc; /* Borda de 1px sólida cinza claro */
+    border-radius: 5px; /* Borda arredondada */
+}
+
+/* Estilos para o grupo de botões */
+.botoes {
+    text-align: right; /* Alinhamento do texto à direita */
+    margin-top: 10px; /* Margem superior de 10px */
+}
+
+/* Estilos para o botão laranja */
+.laranja {
+    background-color: #d3780f; /* Cor de fundo laranja */
+    padding: 10px 20px; /* Preenchimento interno de 10px no topo/fundo e 20px nos lados */
+    color: white; /* Cor do texto branca */
+    border: 0px; /* Sem borda */
+}
+
+/* Estilos para o botão azul */
+.azul {
+    background-color: #1ed1d1; /* Cor de fundo azul esverdeado */
+    padding: 10px 20px; /* Preenchimento interno de 10px no topo/fundo e 20px nos lados */
+    color: white; /* Cor do texto branca */
+    border: 0px; /* Sem borda */
+}

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definição do conjunto de caracteres -->
+    <meta charset="UTF-8">
+
+    <!-- Início da seção de navegação -->
+    <nav>
+        <ul>
+            <!-- Links para as páginas exe3.html e exe4.html -->
+            <li><a href="./exe3.html">Home</a></li>
+            <li><a href="./exe4.html">Sobre</a></li>
+        </ul>
+    </nav>
+
+    <!-- Título da página -->
+    <title>aula03</title>
+
+    <!-- Estilos CSS internos para formatação da tabela -->
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        td, th {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Home</h1>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <section>
+            <!-- Título da seção para a Tabela 1 -->
+            <h2>Tabela 1</h2>
+        </section>
+
+        <!-- Tabela com cabeçalho, corpo e rodapé -->
+        <table>
+            <!-- Cabeçalho da tabela -->
+            <thead>
+                <tr>
+                    <th rowspan="2">coluna 1</th>
+                    <th colspan="4">coluna 2</th>
+                    <th rowspan="2">coluna 3</th>
+                </tr>
+                <tr>
+                    <th>linha 1</th>
+                    <th>linha 2</th>
+                    <th>linha 2</th>
+                    <th>linha 2</th>
+                </tr>
+            </thead>
+
+            <!-- Corpo da tabela com linhas de dados -->
+            <tbody>
+                <!-- Linhas de dados da tabela -->
+                <tr>
+                    <th rowspan="3">linha 1</th>
+                    <td>1.1</td>
+                    <td>1.2</td>
+                    <td>2.3</td>
+                    <td>2.4</td>
+                    <td>2.4</td>
+                </tr>
+                <tr>
+                    <td>2.1</td>
+                    <td>2.2</td>
+                    <td>2.3</td>
+                    <td>2.4</td>
+                    <td>2.4</td>
+                </tr>
+                <tr>
+                    <td>3.1</td>
+                    <td>3.2</td>
+                    <td>3.3</td>
+                    <td>2.4</td>
+                    <td>2.4</td>
+                </tr>
+                <tr>
+                    <th rowspan="2">linha 2</th>
+                    <td>4.1</td>
+                    <td>4.2</td>
+                    <td>4.3</td>
+                    <td>2.4</td>
+                    <td>2.4</td>
+                </tr>
+                <tr>
+                    <td>5.1</td>
+                    <td>5.2</td>
+                    <td>5.3</td>
+                    <td>2.4</td>
+                    <td>2.4</td>
+                </tr>
+            </tbody>
+
+            <!-- Rodapé da tabela -->
+            <tfoot>
+                <tr>
+                    <td colspan="6"></td>
+                </tr>
+            </tfoot>
+        </table>
+    </main>
+</body>
+</html>

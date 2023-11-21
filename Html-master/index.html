@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Estilos para a tabela e layout da página -->
+    <style>
+        table {
+            width: 100%;
+        }
+        td, th {
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+    <title>Exercicio 1 tabelas</title>
+</head>
+<body>
+    <header>
+        <!-- Barra de navegação -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Exercicio 1</a></li>
+                <li><a href="./exe2.html">Exercicio 2</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <!-- Título da seção -->
+            <h1>Exercicio tabelas</h1>
+            <!-- Título específico para a tabela -->
+            <h2>Tabela 1</h2>
+            <!-- Tabela de vendas -->
+            <table>
+                <!-- Cabeçalho da tabela -->
+                <thead>
+                    <!-- Primeira linha do cabeçalho -->
+                    <tr>
+                        <th rowspan="2">produtos</th>
+                        <th colspan="4">vendas</th>
+                        <th rowspan="2">total</th>
+                    </tr>
+                    <!-- Segunda linha do cabeçalho -->
+                    <tr>
+                        <th>leste</th>
+                        <th>oeste</th>
+                        <th>norte</th>
+                        <th>sul</th>
+                    </tr>
+                </thead>
+                <!-- Corpo da tabela -->
+                <tbody>
+                    <!-- Linhas de dados para cada produto -->
+                    <tr>
+                        <td rowspan="3">Produto A</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                        <td>a</td>
+                    </tr>
+                    <!-- ... Outras linhas de dados para Produto A ... -->
+                    <tr>
+                        <td colspan="6">&nbsp;</td>
+                    </tr>
+                    <!-- ... Linhas de dados para outros produtos ... -->
+                </tbody>
+                <!-- Rodapé da tabela -->
+                <tfoot>
+                    <!-- Linha de total no rodapé -->
+                    <tr>
+                        <td colspan="5">Total</td>
+                        <td>R$ 0</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+    <footer>
+        <!-- Linha horizontal no rodapé -->
+        <hr>
+        <!-- Aviso de direitos autorais -->
+        <p>&copy;2023</p>
+    </footer>
+</body>
+</html>

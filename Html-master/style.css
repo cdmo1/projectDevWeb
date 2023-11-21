@@ -1,0 +1,77 @@
+/* Configurações gerais do corpo do documento */
+body {
+    background-color: #eee; /* Cor de fundo cinza claro */
+    font-family: 'Courier New', Courier, monospace; /* Estilo de fonte monoespaçada */
+}
+
+/* Estilos para cabeçalhos h1 e h2 */
+h1, h2 {
+    color: white; /* Cor do texto branca */
+    text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4); /* Sombra no texto */
+}
+
+/* Estilos para o contêiner principal */
+#container {
+    display: block;
+    background-color: rgb(171, 182, 140); /* Cor de fundo verde acinzentado */
+    padding: 20px; /* Preenchimento interno de 20px */
+    margin: auto; /* Centraliza o contêiner */
+    box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3); /* Sombra na caixa */
+    border-radius: 10px; /* Borda arredondada */
+}
+
+/* Estilos para um bloco específico */
+.Block {
+    display: block;
+    background-color: antiquewhite; /* Cor de fundo branco antigo */
+    padding: 10px; /* Preenchimento interno de 10px */
+}
+
+/* Estilos específicos para a classe Azul */
+.Azul {
+    background-color: aquamarine !important; /* Cor de fundo azul esverdeado */
+}
+
+/* Estilos para elementos com a classe Inline */
+.Inline {
+    display: inline;
+    background-color: rgb(24, 66, 33); /* Cor de fundo verde escuro */
+    padding: 5px; /* Preenchimento interno de 5px */
+    margin: 10px; /* Margem externa de 10px */
+}
+
+/* Estilos para a classe de fonte */
+.font {
+    font-size: 0px; /* Tamanho da fonte inicial */
+}
+
+/* Estilos para cabeçalhos h2 dentro da classe font */
+.font h2 {
+    font-size: 26px; /* Tamanho da fonte específico para h2 dentro de .font */
+}
+
+/* Estilos para elementos com a classe inline-block */
+.inline-block {
+    background-color: bisque; /* Cor de fundo bege */
+    text-align: center; /* Alinhamento central do texto */
+    display: inline-block; /* Exibe como bloco em linha */
+    padding: 30px 10px; /* Preenchimento interno de 30px no topo/fundo e 10px nos lados */
+    font-size: 10px; /* Tamanho da fonte */
+    width: calc(25% - 50px); /* Largura calculada com base na largura total e margens */
+}
+
+/* Estilos para elementos com a classe none (ocultos) */
+.none {
+    display: none; /* Oculta os elementos com a classe none */
+}
+
+/* Estilos para o elemento com o ID mostrar */
+#mostrar {
+    background-color: #ddd; /* Cor de fundo cinza claro */
+    padding: 10px; /* Preenchimento interno de 10px */
+}
+
+/* Estilos para listas não ordenadas */
+ul {
+    list-style-image: url(./certo.jpg); /* Usa uma imagem como marcador de lista */
+}

@@ -1,0 +1,22 @@
+/* Definições de fonte e ajustes gerais para o corpo do documento */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0px;
+    padding: 0px;
+}
+
+/* Estilos para a seção principal usando o modelo de grade */
+main {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr 2fr; /* Divide a seção em quatro colunas proporcionais */
+    grid-column-gap: 10px; /* Espaçamento horizontal entre as colunas */
+    grid-row-gap: 10px; /* Espaçamento vertical entre as linhas */
+}
+
+/* Estilos para os itens dentro da seção principal */
+.item {
+    background-color: blue; /* Cor de fundo azul */
+    color: antiquewhite; /* Cor do texto */
+    padding: 50px 20px; /* Preenchimento interno de 50px no topo/fundo e 20px nos lados */
+    text-align: center; /* Alinhamento central do texto */
+}

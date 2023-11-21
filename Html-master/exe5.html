@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definição do conjunto de caracteres e viewport para design responsivo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilos CSS internos para formatação -->
+    <style>
+        /* Centraliza o texto no cabeçalho */
+        header {
+            text-align: center;
+        }
+
+        /* Estilo para remover a marcação de lista padrão e ajustar o espaçamento */
+        ul {
+            list-style: none;
+            padding: 0px;
+        }
+
+        /* Estilo para elementos de lista flutuantes com espaçamento */
+        li {
+            float: left;
+            padding: 10px;
+        }
+
+        /* Estilo para tabelas com largura total e bordas colapsadas */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Estilo para células de cabeçalho e dados da tabela */
+        th, td {
+            border: 1px solid gray;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Estilo para cabeçalhos da tabela com fundo e cor de texto personalizados */
+        th {
+            background-color: #123;
+            color: aliceblue;
+        }
+
+        /* Estilo para células específicas nas colunas 2 e 4 com fundo vermelho */
+        td:nth-child(5n+2), td:nth-child(5n+4) {
+            background: red;
+        }
+
+        /* Estilo para o rodapé da tabela com texto centralizado e borda branca */
+        tfoot td {
+            text-align: center;
+            border: 1px solid white;
+        }
+    </style>
+
+    <!-- Título da página -->
+    <title>exe 5</title>
+</head>
+<body>
+    <!-- Links de navegação -->
+    <a href="#">Home</a>&nbsp;
+    <a href="#">Sobre</a>&nbsp;
+    <a href="#">Contato</a>
+
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Exercicio</h1>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção do formulário para cadastro -->
+        <section>
+            <hr>
+            <!-- Formulário com campos para nome, CPF, endereço, telefone e email -->
+            <form>
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome"><br><br>
+                <label for="cpf">CPF:</label>
+                <input type="text" name="cpf" id="cpf"><br><br>
+                <label for="endereco">Endereço:</label>
+                <input type="text" name="endereco" id="endereco"><br><br>
+                <label for="telefone">Telefone:</label>
+                <input type="text" name="telefone" id="telefone"><br><br>
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="email@gmail.com"><br><br>
+                <input type="submit">&nbsp; &nbsp; | &nbsp; &nbsp;
+                <input type="reset" value="Limpar"><br>
+                <hr>
+            </form>
+        </section>
+
+        <!-- Seção de exibição de dados em tabela -->
+        <section>
+            <!-- Tabela para exibir dados -->
+            <table>
+                <!-- Cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>CPF</th>
+                        <th>Endereço</th>
+                        <th>Telefone</th>
+                        <th>Email</th>
+                    </tr>
+                </thead>
+
+                <!-- Corpo da tabela com linhas de dados -->
+                <tbody>
+                    <!-- Linhas de dados para exibir registros (exemplo) -->
+                    <!-- ... -->
+                </tbody>
+
+                <!-- Rodapé da tabela com navegação entre páginas -->
+                <tfoot>
+                    <tr>
+                        <td colspan="5">
+                            <!-- Formulário no rodapé com botões de navegação -->
+                            <form>
+                                <br>
+                                <input type="submit" value="Anterior">
+                                <select>
+                                    <option value="1">1</option>
+                                    <option value="2">2</option>
+                                    <option value="3">3</option>
+                                </select>
+                                <input type="submit" value="Próximo">
+                                <br><br>
+                                <hr>
+                            </form>
+                        </td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <!-- Aviso de direitos autorais -->
+        <p>&copy;2023 - Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>

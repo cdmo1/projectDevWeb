@@ -1,0 +1,71 @@
+/* Estilos gerais para o corpo do documento */
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; /* Estilo de fonte */
+    margin: 0px; /* Margem zero para o corpo */
+    padding: 0px; /* Preenchimento zero para o corpo */
+}
+
+/* Estilos para o contêiner principal usando o sistema de grid */
+.container {
+    display: grid; /* Exibição em grade */
+    grid-template-columns: 1fr 3fr 1fr; /* Três colunas com larguras proporcionais */
+    grid-template-rows: 150px auto 100px; /* Três linhas com alturas específicas */
+    grid-template-areas: 
+        "header header header" /* Área do cabeçalho */
+        "sidebar main main" /* Área da barra lateral e área principal */
+        "footer footer footer"; /* Área do rodapé */
+}
+
+/* Estilos para o cabeçalho */
+header {
+    grid-area: header; /* Área do cabeçalho conforme definido na grade */
+    background-color: aquamarine; /* Cor de fundo verde-azulado */
+    padding: 20px; /* Preenchimento interno de 20px */
+}
+
+/* Estilos para a barra lateral */
+aside {
+    grid-area: sidebar; /* Área da barra lateral conforme definido na grade */
+    background-color: blanchedalmond; /* Cor de fundo amêndoa clara */
+    padding: 20px; /* Preenchimento interno de 20px */
+    text-align: center; /* Alinhamento centralizado do texto */
+}
+
+/* Estilos para a área principal */
+main {
+    grid-area: main; /* Área principal conforme definido na grade */
+    background-color: brown; /* Cor de fundo marrom */
+    padding: 20px; /* Preenchimento interno de 20px */
+    text-align: center; /* Alinhamento centralizado do texto */
+}
+
+/* Estilos para o rodapé */
+footer {
+    grid-area: footer; /* Área do rodapé conforme definido na grade */
+    background-color: cadetblue; /* Cor de fundo azul-cadete */
+    padding: 20px; /* Preenchimento interno de 20px */
+}
+
+/* Estilos para os itens dentro da área principal */
+.item {
+    background-color: rgb(114, 7, 39); /* Cor de fundo roxo-avermelhado */
+    display: inline-block; /* Exibição em bloco em linha */
+    width: calc(33.33% - 43px); /* Largura calculada com margem */
+    padding: 50px 20px; /* Preenchimento interno de 50px no topo/fundo e 20px nos lados */
+    text-align: center; /* Alinhamento centralizado do texto */
+    margin: 5px 0px; /* Margem superior e inferior de 5px, sem margens laterais */
+}
+
+/* Estilos responsivos para telas de largura máxima de 780px */
+@media (max-width: 780px) {
+    .item {
+        width: calc(50% - 43px); /* Largura calculada com margem para telas menores */
+    }
+}
+
+/* Estilos responsivos para telas de largura máxima de 530px */
+@media (max-width: 530px) {
+    .item {
+        width: calc(100% - 43px); /* Largura total com margem para telas ainda menores */
+    }
+}

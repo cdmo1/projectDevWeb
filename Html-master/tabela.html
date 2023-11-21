@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            border: 1px solid black;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <main>
+        <section>
+            <!-- Título da seção -->
+            <h1>Tabela</h1>
+            <!-- Definindo a tabela -->
+            <table>
+                <!-- Legenda da tabela -->
+                <caption>Esta é a legenda da tabela</caption>
+                <!-- Agrupamento de colunas -->
+                <colgroup>
+                    <col span="2">
+                    <col span="2" style="background-color: red; border: 5px solid;">
+                </colgroup>
+                <!-- Cabeçalho da tabela -->
+                <thead>
+                    <tr>
+                        <!-- Cabeçalho da coluna 1 ocupando 2 colunas -->
+                        <th colspan="2">Coluna 1</th>
+                        <!-- Cabeçalho da coluna 2 -->
+                        <th>Coluna 2</th>
+                        <!-- Cabeçalho da coluna 3 -->
+                        <th>Coluna 3</th>
+                    </tr>
+                </thead>
+                <!-- Corpo da tabela -->
+                <tbody>
+                    <!-- Linha 1 -->
+                    <tr>
+                        <!-- Cabeçalho da linha 1 -->
+                        <th>Linha 1</th>
+                        <!-- Dados da linha 1 -->
+                        <td>1.1</td>
+                        <td>1.2</td>
+                        <td>1.3</td>
+                    </tr>
+                    <!-- Linha 2 -->
+                    <tr>
+                        <!-- Cabeçalho da linha 2 -->
+                        <th>Linha 2</th>
+                        <!-- Dados da linha 2, célula 2.2 ocupando 2 linhas -->
+                        <td>2.1</td>
+                        <td rowspan="2">2.2</td>
+                        <td>2.3</td>
+                    </tr>
+                    <!-- Linha 3 -->
+                    <tr>
+                        <!-- Cabeçalho da linha 3 -->
+                        <th>Linha 3</th>
+                        <!-- Dados da linha 3 -->
+                        <td>3.1</td>
+                        <td>3.3</td>
+                    </tr>
+                </tbody>
+                <!-- Rodapé da tabela -->
+                <tfoot>
+                    <tr>
+                        <!-- Célula de rodapé ocupando 4 colunas -->
+                        <td colspan="4">Rodapé</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+    </main>
+</body>
+</html>

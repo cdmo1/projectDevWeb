@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Definição do conjunto de caracteres e viewport para design responsivo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
+    <title>Formularios</title>
+</head>
+<body>
+    <!-- Contêiner principal da página -->
+    <main>
+        <!-- Seção do formulário -->
+        <section>
+            <!-- Título da seção -->
+            <h1>Fomularios</h1>
+
+            <!-- Formulário com o nome "form1" -->
+            <form name="form1">
+                <!-- Campo de texto desativado (disabled) -->
+                <label for="texto">Texto:</label>
+                <input type="text" value="teste" name="texto" id="textoId" disabled>
+                <br><br>
+                <!-- Campo de senha -->
+                <label for="senha">Senha:</label>
+                <input type="password" name="senha"><br><br>
+                <!-- Campo de e-mail com placeholder -->
+                <label for="email">Email:</label>
+                <input type="email" name="email" placeholder="email@gmail.com"><br><br>
+                <!-- Campo de número -->
+                <label for="numero">Numero:</label>
+                <input type="number" name="numero"><br><br>
+                <hr>
+                <!-- Opções de seleção múltipla (checkbox) -->
+                <label for="checkbox">Seleção múltipla:</label><br>
+                <input type="checkbox" name="checkbox" value="opcao1"> Opcao 1 <br>
+                <input type="checkbox" name="checkbox" value="opcao2"> Opcao 2 <br>
+                <input type="checkbox" name="checkbox" value="opcao3"> Opcao 3 <br>
+                <hr>
+                <!-- Opções de seleção única (radio) -->
+                <label for="selecao">Seleção única:</label><br>
+                <input type="radio" name="selecao" value="opcao1"> Opcao 1 <br>
+                <input type="radio" name="selecao" value="opcao2"> Opcao 2 <br>
+                <input type="radio" name="selecao" value="opcao3"> Opcao 3 <br>
+                <hr>
+                <!-- Campos de data, data e hora, e hora -->
+                <label for="data">Data:</label>
+                <input type="date" name="data"><br><br>
+                <label for="datahora">Data e hora:</label>
+                <input type="datetime-local" name="datahora"><br><br>
+                <label for="hora">Hora:</label>
+                <input type="time" name="hora"><br><br>
+                <hr>
+                <!-- Menu de seleção (select) -->
+                <label for="selecionar">Selecionar:</label>
+                <select name="selecionar">
+                    <option value="opcao1">Opcao 1</option>
+                    <option value="opcao2">Opcao 2</option>
+                    <option value="opcao3">Opcao 3</option>
+                </select><br><br>
+                <!-- Área de texto (textarea) -->
+                <label for="area">Área:</label>
+                <textarea name="area" cols="30" rows="10"></textarea>
+                <hr>
+                <!-- Botões de envio, reset e link para alerta -->
+                <input type="submit"><br>
+                <input type="submit" value="Salvar">
+                <input type="reset"><br>
+                <a href="#" onclick="alert('Funcao chata')">Alerta</a>
+            </form>
+        </section>
+
+        <!-- Botão de alerta fora do formulário -->
+        <br><br><br><br><br>
+        <input type="button" value="Alerta" form="form1" onclick="alert('Funcao chata')">
+        <br><br><br><br><br>
+    </main>
+</body>
+</html>

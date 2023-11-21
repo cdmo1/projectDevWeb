@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definição do conjunto de caracteres e viewport para design responsivo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Título da página -->
+    <title>Aula Display</title>
+    
+    <!-- Inclusão do arquivo de estilo externo (style.css) -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <!-- Contêiner principal da página -->
+    <main id="container">
+        <!-- Seção principal -->
+        <section>
+            <!-- Título da seção -->
+            <h1>Aula Display</h1>
+            
+            <!-- Div com classe "Block" -->
+            <div class="Block">
+                <!-- Título e conteúdo da div "Block" -->
+                <h2>Conteudo Display Block</h2>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui, quae dolorum adipisci 
+                    nemo nesciunt exercitationem est explicabo minus delectus eligendi 
+                    possimus saepe totam non consequuntur officiis odio laudantium soluta necessitatibus.</p>
+            </div>
+            
+            <!-- Span com classes "Azul" e "Diplay" -->
+            <span class="Azul Diplay">Display Block</span>
+            
+            <!-- Div com conteúdo de "Display Inline" -->
+            <div>
+                <h2>Diplay inline</h2>
+                <div class="Inline">Display Inline</div>
+                <div class="Inline">Display Inline</div>
+                <div class="Inline">Display Inline</div>
+                <div class="Inline">Display Inline</div>
+            </div>
+            
+            <br>
+            
+            <!-- Div com classes para "Display Inline-Block" -->
+            <div class="">
+                <h2>Display Inline-Block</h2>
+                <div class="inline-block">Display<br> Inline-Block</div>
+                <div class="inline-block">Display<br> Inline-Block</div>
+                <div class="inline-block">Display<br> Inline-Block</div>
+                <div class="inline-block">Display<br> Inline-Block</div>
+            </div>
+            
+            <!-- Div com ID "mostrar" e classe "none" para "Display None" -->
+            <div id="mostrar" class="none">
+                <h2>Diplay None</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Veniam molestiae reprehenderit quo laboriosam doloremque quasi,
+                     ratione hic optio, a quos libero totam aspernatur possimus repudiandae iure officia odit repellat id.</p>
+                <ul>
+                    <li>Elemento 1</li>
+                    <li>Elemento 2</li>
+                    <li>Elemento 3</li>
+                </ul>
+            </div>
+            
+            <!-- Formulário com radio buttons para mostrar ou não mostrar a div "mostrar" -->
+            <form>
+                <label for="mostrar">Mostrar:</label>
+                <input type="radio" name="exibir" id="mostrar" onclick="document.getElementById('mostrar').classList.remove('none')">
+                <label for="Nmostrar">Não mostrar</label>
+                <input type="radio" name="exibir" id="Nmostrar" onclick="document.getElementById('mostrar').classList.add('none')">
+            </form>
+        </section>
+    </main>
+    
+    <!-- Espaçamento adicional no final da página -->
+    <br><br><br><br><br>
+</body>
+</html>

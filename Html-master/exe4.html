@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Definição do conjunto de caracteres e viewport para design responsivo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilos CSS internos para formatação -->
+    <style>
+        /* Estilo para remover a marcação de lista padrão e ajustar o espaçamento */
+        ul{
+            list-style:none;
+            padding: 0px;
+        }
+
+        /* Estilo para elementos de lista flutuantes com espaçamento */
+        li{
+            float:left;
+            padding: 10px;
+        }
+
+        /* Estilo para tabelas com largura total e bordas colapsadas */
+        table{
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        /* Estilo para células de cabeçalho e dados da tabela */
+        th, td{
+            border: 1px solid #123;
+            text-align: center;
+            padding: 10px;
+        }
+
+        /* Estilo para cabeçalhos da tabela com fundo e cor de texto personalizados */
+        th{
+            background-color: #123;
+            color:aliceblue;
+        }
+
+        /* Estilo para a seção de formulário com fundo e margens */
+        div{
+            background-color: chocolate;
+            padding: 10px;
+            margin: 50px;
+        }
+
+        /* Estilo para o rodapé com alinhamento de texto central */
+        footer{
+            text-align: center;
+        }
+    </style>
+
+    <!-- Título da página -->
+    <title>exe 4</title>
+</head>
+<body>
+    <!-- Cabeçalho da página -->
+    <header>
+        <h1>Cadastro e listagem de Pontos</h1>
+    </header>
+
+    <!-- Corpo principal da página -->
+    <main>
+        <!-- Seção do formulário para registro de ponto -->
+        <section>
+            <hr>
+            <!-- Formulário com campos de motivo, data, tipo e botão de envio -->
+            <form>
+                <label for="motivo">Motivo:</label>
+                <input type="text" name="motivo" id="motivo">
+                <label for="data">Data:</label>
+                <input type="date" name="data" id="data">
+                <label for="tipo">Tipo:</label>
+                <select name="tipo" id="tipo">
+                    <option value="entrada">Entrada</option>
+                    <option value="saida">Saída</option>
+                </select>
+                <input type="submit" value="Registrar ponto">
+            </form>
+            <hr>
+        </section>
+
+        <!-- Seção de exibição de informações pessoais e tabela de registro de ponto -->
+        <section>
+            <!-- Lista não ordenada com informações sobre o nome e cargo -->
+            <ul>
+                <li><b>Nome:</b> Jose da Silva</li>
+                <li><b>Cargo:</b> Portaria</li>
+            </ul>
+
+            <!-- Tabela de registro de ponto -->
+            <table>
+                <!-- Cabeçalho da tabela com legenda -->
+                <thead>
+                    <caption>Registro de ponto</caption>
+                    <tr>
+                        <th>Data</th>
+                        <th>Entrada</th>
+                        <th>Saída</th>
+                    </tr>
+                </thead>
+
+                <!-- Corpo da tabela com linhas de dados -->
+                <tbody>
+                    <!-- Linhas de dados para o registro de ponto -->
+                    <tr>
+                        <td rowspan="2">Entrada</td>
+                        <td>Saída</td>
+                        <td>Saída</td>
+                    </tr>
+                    <tr>
+                        <td>Entrada</td>
+                        <td>Saída</td>
+                    </tr>
+                    <!-- Repetição das linhas para simular mais registros -->
+                    <!-- ... -->
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Rodapé da página -->
+    <footer>
+        <!-- Aviso de direitos autorais -->
+        <p>&copy;2023</p>
+        <!-- Divisão adicional para espaçamento -->
+        <div>&nbsp;</div>
+    </footer>
+</body>
+</html>

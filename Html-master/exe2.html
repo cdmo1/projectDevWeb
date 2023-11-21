@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <!-- Metadados especificando o conjunto de caracteres e a viewport para design responsivo -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Estilos CSS internos para formatação da tabela -->
+    <style>
+        table{
+            width: 100%;
+        }
+        td,th{
+            text-align: center;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        ul{
+            list-style: none;
+            padding: 0px;
+        }
+        li{
+            float: left;
+            padding: 10px;
+        }
+    </style>
+    
+    <!-- Título da página -->
+    <title>Exercício 1 - Tabelas</title>
+</head>
+<body>
+    <!-- Seção de cabeçalho -->
+    <header>
+        <!-- Menu de navegação com links para Exercício 1 e Exercício 2 -->
+        <nav>
+            <ul>
+                <li><a href="./index.html">Exercício 1</a></li>
+                <li><a href="./exe2.html">Exercício 2</a></li>
+            </ul>
+        </nav>
+        <br><br>
+    </header>
+
+    <!-- Seção de conteúdo principal -->
+    <main>
+        <section>
+            <!-- Título da seção para o exercício sobre tabelas -->
+            <h1>Exercício - Tabelas</h1>
+            <!-- Subtítulo para a Tabela 2 -->
+            <h2>Tabela 2</h2>
+        </section>
+
+        <!-- Tabela para exibir dados -->
+        <table>
+            <!-- Cabeçalho da tabela com duas linhas -->
+            <thead>
+                <!-- Primeira linha do cabeçalho -->
+                <tr>
+                    <th rowspan="2">nome</th>
+                    <th rowspan="2">endereço</th>
+                    <th colspan="2">telefone</th>
+                    <th rowspan="2">email</th>
+                    <th rowspan="2">data</th>
+                    <th rowspan="2">sexo</th>
+                    <th rowspan="2">estado civil</th>
+                </tr>
+                <!-- Segunda linha do cabeçalho -->
+                <tr>
+                    <th>residencial</th>
+                    <th>celular</th>
+                </tr>
+            </thead>
+
+            <!-- Corpo da tabela com linhas de dados -->
+            <tbody>
+                <!-- Primeira linha de dados -->
+                <tr>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                    <td>linha 1</td>
+                </tr>
+                <!-- Segunda e terceira linhas de dados com rowspan -->
+                <tr>
+                    <td rowspan="2">linha 3</td>
+                    <td>linha 3</td>
+                    <td rowspan="2">linha 3</td>
+                    <td rowspan="2">linha 3</td>
+                    <td>linha 3</td>
+                    <td>linha 3</td>
+                    <td>linha 3</td>
+                    <td rowspan="2">linha 3</td>
+                </tr>
+                <tr>
+                    <td>linha 3</td>
+                    <!-- colspan para mesclar células na mesma linha -->
+                    <td colspan="3">&nbsp;</td>
+                </tr>
+                <!-- Quarta linha de dados -->
+                <tr>
+                    <td>linha 4</td>
+                    <td>linha 4</td>
+                    <td>linha 4</td>
+                    <td>linha 4</td>
+                    <td>linha 4</td>
+                    <td>linha 4</td>
+                    <td>linha 4</td>
+                    <td>linha 4</td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
+
+    <!-- Seção de rodapé -->
+    <footer>
+        <!-- Linha horizontal como separador -->
+        <hr>
+        <!-- Aviso de direitos autorais -->
+        <p>&copy;2023</p>
+    </footer>
+</body>
+</html>
